@@ -1,0 +1,18 @@
+graph TD
+    A[Visita ao Blog] --> B{Coleta de Dados?}
+    B -- Sim --> C{Dados de Navegação}
+    C --> D[Endereço IP]
+    C --> E[Páginas Visitadas]
+    C --> F[Tempo no Site]
+    B -- Sim --> G{Dados Fornecidos Voluntariamente}
+    G --> H[Nome - Formulário de Contato]
+    G --> I[Email - Formulário de Contato]
+    G --> J[Mensagem - Formulário de Contato]
+    D --> K[Análise de Tráfego]
+    E --> K
+    F --> K
+    H --> L[Resposta a Contato]
+    I --> L
+    J --> L
+    K --> M[Melhoria da Experiência do Usuário]
+    L --> M
