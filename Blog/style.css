@@ -316,6 +316,7 @@ footer p {
         box-shadow: -2px 0 5px rgba(0,0,0,0.1);
         transition: right 0.3s ease;
         z-index: 999;
+        
     }
 
     header nav.active {
@@ -440,3 +441,52 @@ footer p {
     }
 }
 
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row; /* Mantém os ícones lado a lado */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  footer nav ul li {
+    margin: 0;
+  }
+  
+  
+  /* Responsividade para tablets */
+  @media (max-width: 768px) {
+    footer nav ul {
+      justify-content: center;
+      gap: 10px;
+      align-items:center;
+      
+    }
+  
+    footer p {
+      font-size: 13px;
+    }
+  }
+  
+  /* Responsividade para celulares */
+  @media (max-width: 480px) {
+    footer nav ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    footer nav ul li {
+      margin-bottom: 10px;
+      display: flex;
+    }
+  
+    footer p {
+      font-size: 12px;
+    }
+  }
